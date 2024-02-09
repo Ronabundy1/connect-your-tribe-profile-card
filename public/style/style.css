@@ -109,3 +109,12 @@ button:last-child {
 button:hover {
   background-color: var(--hover-color); /* Donkerder groene achtergrond bij hover */
 }
+
+.hobbies-container {
+  display: none;
+}
+
+.hobbies-container.show {
+  display: block;
+}
+
