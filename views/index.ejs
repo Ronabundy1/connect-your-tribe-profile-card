@@ -1,5 +1,7 @@
 <%- include('./partials/head') %>
 
+<%- include('./partials/head') %>
+
 <div class="container">
   <div class="profile-pic">
     
@@ -9,13 +11,20 @@
     <p><%= data.bio %></p>
   </div>
   <div class="button-container">
-    <button><%= data.phone_number %></button>
-    <button><%= data.email %></button>
+    <a href="tel:<%= data.phone_number %>">
+      <button><%= data.phone_number %></button>
+    </a>
+    <a href="mailto:<%= data.email %>">
+      <button><%= data.email %></button>
+    </a>
     <a href="https://github.com/Ronabundy1" target="_blank">
       <button><%= data.website %></button>
     </a>
   </div>
 </div>
+
+<%- include('./partials/foot') %>
+
 
 <%- include('./partials/foot') %>
 

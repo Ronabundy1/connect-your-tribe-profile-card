@@ -98,7 +98,7 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s; /* Voeg overgang toe */
-  margin-bottom: 10px;
+  margin-bottom: 30px; /* Aangepaste marge tussen de knoppen */
   animation: fadeIn 1.5s ease forwards; /* Voeg animatie toe */
 }
 
