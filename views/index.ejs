@@ -1,14 +1,23 @@
 <%- include('./partials/head') %>
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
-
-  <p><%= data.name %></p>
-
-  <footer></footer>
-</article>
+<div class="container">
+  <div class="profile-pic">
+    <img src="" alt="Ronaldo">
+  </div>
+  <div class="name-location">
+    <h1><%= data.name %> <%= data.prefix %> <%= data.surname %></h1>
+    <p><%= data.bio %></p>
+  </div>
+  <div class="button-container">
+    <button><%= data.phone_number %></button>
+    <button><%= data.email %></button>
+    <a href="https://github.com/Ronabundy1" target="_blank">
+      <button><%= data.website %></button>
+    </a>
+  </div>
+</div>
 
 <%- include('./partials/foot') %>
+
+
+
